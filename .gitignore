@@ -1,0 +1,75 @@
+# ==============================================================================
+# SitePulse Git Ignore Configuration
+# ==============================================================================
+
+# Node Dependencies
+node_modules/
+**/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+
+# Compiled Production Outputs & Build Artifacts
+dist/
+**/dist/
+build/
+**/build/
+out/
+*.tsbuildinfo
+
+# Environment & Secret Files (Never commit credentials)
+.env
+.env.*
+!.env.example
+!.env.*.example
+server/.env
+client/.env
+*.pem
+*.key
+*.cert
+
+# Database Storage & Local Runtime Data
+data/
+server/data/
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Vite & Bundler Caches
+.vite/
+client/.vite/
+.cache/
+.parcel-cache/
+
+# Logs & Debug Output
+logs/
+*.log
+
+# Test & Coverage Reports
+coverage/
+.nyc_output/
+
+# OS Generated Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# IDE & Editor Configurations
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+

@@ -1,0 +1,18 @@
+{
+  "name": "sitepulse",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SitePulse — Website Health, Uptime & SSL Monitoring SaaS",
+  "scripts": {
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "worker": "npm --prefix server run worker",
+    "db:migrate": "npm --prefix server run db:migrate",
+    "db:seed": "npm --prefix server run db:seed",
+    "db:setup": "npm --prefix server run db:setup",
+    "test": "npm --prefix server run test:self-check",
+    "build:server": "npm --prefix server run build",
+    "build:client": "npm --prefix client run build",
+    "build": "npm run build:server && npm run build:client"
+  }
+}
